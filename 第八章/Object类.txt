@@ -1,6 +1,0 @@
-1:【equals()方法】
-  “==”运算符用于比较两个变量本身的值(即两个对象在内存中的首地址)，“equals()”方法则是比较两个字符串中所包含的内容是否相同。
-2：【toString()方法】
-  返回toString()方法return的那个字符串
-3：【getClass()；getName()】
-  getClass返回值是xx.getClass()中xx的类型（class Person{}输出的是class Person）;xx.getClass().getName()（class Person{}输出的是Person）。都是以Stirng的形式

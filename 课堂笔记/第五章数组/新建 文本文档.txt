@@ -1,8 +1,0 @@
-1:数组中的元素不可变、类型一样
-2：【数组的声明】datatype[] arrayName;
-                 datatype arrayName[];
-3:【数组对象的创建】arrayName = new datatype[Length]
-(int a[] = new int[5];)
-***********************
-       二维数组
-
