@@ -1,0 +1,4 @@
+1:【标签JLable】是用来在窗口显示文字或图形的控件，它可使用javax.swing包中的JLable类创建JLable lab = new JLable("suiyi");
+2:直接jfrm.setBackground(Color.PINK)时窗口背景颜色不是粉红色，因为JFrame的框架一旦被创建其中就已经包含了一个内容窗格了，设置JFrame的背景颜色仍然会被覆盖可以通过Container c = new jfrm.getContenPane()来获取jfrm的内容窗格然后c.setBackground(Color.PINK)来实现设置背景颜色。
+3：命令按钮JButton（JButton bun = new JButton("点击我")；）JButton类的方法大部分是从其父类javax.swing.AbstractButton继承来的。创建复选框用JCheckBox、创建单选按钮用JRadioButtion、创建一个单选按钮对象用ButtonGroup。
+4：文本编辑组建可以分为：单行文本编辑组建(文本行、文本框)通过JFextField来实现的，只有一行文本超过长度不会折行。密码文本行组建当输入字符时被*替代，通过JPasswordField来实现的。多行文本编辑组建(文本区)通过JF

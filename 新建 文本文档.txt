@@ -1,0 +1,51 @@
+package anli;
+import java.util.*;
+class Pack extends Object{
+	private String brand;
+	private String colour;
+	private float price;
+	//传递形参  品牌，颜色，价格
+	Pack(String brand, String colour, float price){//通过形参赋值
+		this.brand = brand;
+		this.colour = colour;
+		this.price = price;
+	}
+	/*public boolean equals(Object obj){
+		if(obj!=null&&obj instanceof Pack){
+			Pack p = (Pack)obj;
+			if(brand.equals(p.brand)&&colour.equals(p.colour))
+				return true;
+		}
+		return false;
+	}*/
+	
+	public boolean equals(Object obj){
+		if(obj==this)//两个就是一个的情况
+			return true;
+		/*if(obj==null)自己注释掉的
+			return false;
+		if(!(obj instanceof Pack))自己注释掉的
+			return false;*/
+		Pack p = (Pack)obj;//将obj转换为Pack的类型
+		if(brand.equals(p.brand)&&colour.equals(p.colour))//品牌颜色一样，但是引用的不是同方法里的
+			return true;
+		return false;	
+		
+	}
+	//输出品牌颜色
+	public String toString() {
+		return "Pack [brand=" + brand + ", colour=" + colour + "]";	
+	}/*********************************/
+	
+}
+
+class TestObject{
+	public static void main(String[] args){
+		Pack p = new Pack("LV","yellow",200);
+		Pack p1 = new Pack("LV","yellow",2000);
+		System.out.println(p.equals(p1));
+		System.out.println(p);//输出的是toString那个构造函数（或写为System.out.println(p.toString())）
+		Date d = new Date();//计时
+		System.out.println(d);
+	}
+}

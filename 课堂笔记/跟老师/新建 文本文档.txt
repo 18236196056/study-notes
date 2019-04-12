@@ -1,0 +1,3 @@
+1:instanceof(表判断，意思是是否是)（eg：System.out.println（s instanceof String）s的类型是否是String，输出的结果是true、falous）
+2：多态里有重载和多态
+3：final修饰类的成员方法时表示最终方法，不能被重写
